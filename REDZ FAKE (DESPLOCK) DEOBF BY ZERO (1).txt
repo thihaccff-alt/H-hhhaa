@@ -3744,7 +3744,8 @@ local v484 = v466:MakeTab({"Discord", "info"})
 local v700 = v466:MakeTab({"Shop Game", "info"})
 local v485 = v466:MakeTab({"Farm", "home"})
 local v699 = v466:MakeTab({"Farm V2", "home"})
-local v487 = v466:MakeTab({"Quest | Items", "swords"})
+local v487 = v466:MakeTab({"Quest", "swords"})
+local v698 = v466:MakeTab({"Items", "swords"})
 local v486 = v466:MakeTab({"Auto Fishing", "rbxassetid://127664059821666"})
 local v489 = v466:MakeTab({"Sea Event", "waves"})
 local v490 = v466:MakeTab({"Race V4", "crown"})
@@ -6597,8 +6598,8 @@ if World3 then
                 end
             end
         end)
-        local _ = v487:AddSection({"Auto CDK"})
-        v487:AddToggle({
+        local _ = v698:AddSection({"Auto CDK"})
+        v698:AddToggle({
             Name = "Auto Cdk [Beta]",
             Description = "",
             Default = false,
@@ -6668,7 +6669,7 @@ if World3 then
                 end)
             end
         end)
-        v487:AddToggle({
+        v698:AddToggle({
             Name = "Auto Get Yama",
             Description = "",
             Default = false,
@@ -6687,7 +6688,7 @@ if World3 then
                 end
             end
         end)
-        v487:AddToggle({
+        v698:AddToggle({
             Name = "Auto Holy Torch Tushita",
             Description = "",
             Default = false,
@@ -6733,7 +6734,7 @@ if World3 then
                 end
             end
         end)
-        v487:AddToggle({
+        v698:AddToggle({
             Name = "Auto Get Tushita",
             Description = "",
             Default = false,
@@ -6769,8 +6770,8 @@ if World3 then
                 end
             end
         end)
-        local _ = v487:AddSection({"Quest Sword"})
-        v487:AddToggle({
+        local _ = v698:AddSection({"Quest Sword"})
+        v698:AddToggle({
             Name = "Auto Get Sword Twin Hooks",
             Description = "",
             Default = false,
@@ -6808,7 +6809,7 @@ if World3 then
                 end
             end
         end)
-        v487:AddToggle({
+        v698:AddToggle({
             Name = "Auto Get Sword Canvander",
             Description = "",
             Default = false,
@@ -6844,7 +6845,7 @@ if World3 then
                 end
             end
         end)
-        v487:AddToggle({
+        v698:AddToggle({
             Name = "Auto Get Sword Buddy",
             Description = "",
             Default = false,
