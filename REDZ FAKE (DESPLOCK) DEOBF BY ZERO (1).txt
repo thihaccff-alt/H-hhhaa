@@ -3743,6 +3743,7 @@ v466:AddMinimizeButton({
 local v484 = v466:MakeTab({"Discord", "info"})
 local v700 = v466:MakeTab({"Shop Game", "info"})
 local v485 = v466:MakeTab({"Farm", "home"})
+local v699 = v466:MakeTab({"Farm V2", "home"})
 local v487 = v466:MakeTab({"Quest | Items", "swords"})
 local v486 = v466:MakeTab({"Auto Fishing", "rbxassetid://127664059821666"})
 local v489 = v466:MakeTab({"Sea Event", "waves"})
@@ -4623,8 +4624,8 @@ task.spawn(function()
     end
 end)
 end
-local _ = v485:AddSection({"Farm Bones"})
-local v589 = v485:AddParagraph({Title = "Check Bone", Content = "Loading..."})
+local _ = v699:AddSection({"Farm Bones"})
+local v589 = v699:AddParagraph({Title = "Check Bone", Content = "Loading..."})
 task.spawn(function()
     while task.wait(1) do
         pcall(function()
@@ -4633,7 +4634,7 @@ task.spawn(function()
         end)
     end
 end)
-v485:AddToggle({
+v699:AddToggle({
     Name = "Auto Farm Bones",
     Description = "",
     Default = false,
@@ -4706,7 +4707,7 @@ spawn(function()
         end
     end
 end)
-v485:AddToggle({
+v699:AddToggle({
     Name = "Auto Kill Soul Reaper",
     Description = "",
     Default = false,
@@ -4749,7 +4750,7 @@ spawn(function()
         end
     end
 end)
-v485:AddToggle({
+v699:AddToggle({
     Name = "Auto Trade Bones",
     Description = "",
     Default = false,
@@ -4765,7 +4766,7 @@ spawn(function()
         end
     end
 end)
-v485:AddToggle({
+v699:AddToggle({
     Name = "Auto Pray",
     Description = "",
     Default = false,
@@ -4785,7 +4786,7 @@ spawn(function()
         end
     end)
 end)
-v485:AddToggle({
+v699:AddToggle({
     Name = "Auto Try Luck",
     Description = "",
     Default = false,
@@ -4805,8 +4806,8 @@ spawn(function()
         end
     end)
 end)
-local _ = v485:AddSection({"Katakuri"})
-local v606 = v485:AddParagraph({Title = "Check Cake Prince", Content = "Loading..."})
+local _ = v699:AddSection({"Katakuri"})
+local v606 = v699:AddParagraph({Title = "Check Cake Prince", Content = "Loading..."})
 task.spawn(function()
     while task.wait(1) do
         pcall(function()
@@ -4825,7 +4826,7 @@ task.spawn(function()
         end)
     end
 end)
-v485:AddToggle({
+v699:AddToggle({
     Name = "Farm Katakuri",
     Description = "",
     Default = false,
@@ -4929,7 +4930,7 @@ task.spawn(function()
         end
     end
 end)
-v485:AddToggle({
+v699:AddToggle({
     Name = "Farm Katakuri V2",
     Description = "",
     Default = false,
