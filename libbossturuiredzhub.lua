@@ -10,42 +10,43 @@ local PlayerMouse = Player:GetMouse()
 
 local redzlib = {
 	Themes = {
-		Darker = {
-			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(25, 25, 25))
-			}),
-			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
-			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
-			["Color Theme"] = Color3.fromRGB(88, 101, 242),
-			["Color Text"] = Color3.fromRGB(243, 243, 243),
-			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
-		},
-		Dark = {
-			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(47.5, 47.5, 47.5)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(40, 40, 40))
-			}),
-			["Color Hub 2"] = Color3.fromRGB(45, 45, 45),
-			["Color Stroke"] = Color3.fromRGB(65, 65, 65),
-			["Color Theme"] = Color3.fromRGB(65, 150, 255),
-			["Color Text"] = Color3.fromRGB(245, 245, 245),
-			["Color Dark Text"] = Color3.fromRGB(190, 190, 190)
-		},
-		Purple = {
-			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27.5, 25, 30))
-			}),
-			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
-			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
-			["Color Theme"] = Color3.fromRGB(150, 0, 255),
-			["Color Text"] = Color3.fromRGB(240, 240, 240),
-			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
-		}
+		Darker = { -- Modern Slate (đẹp, dễ nhìn, hợp UI hub)
+	["Color Hub 1"] = ColorSequence.new({
+		ColorSequenceKeypoint.new(0.00, Color3.fromRGB(17, 19, 26)),
+		ColorSequenceKeypoint.new(0.50, Color3.fromRGB(26, 29, 40)),
+		ColorSequenceKeypoint.new(1.00, Color3.fromRGB(17, 19, 26))
+	}),
+	["Color Hub 2"] = Color3.fromRGB(21, 23, 33),     -- nền chính (mềm, không gắt)
+	["Color Stroke"] = Color3.fromRGB(55, 60, 85),    -- viền hiện đại
+	["Color Theme"] = Color3.fromRGB(120, 170, 255),  -- accent xanh dịu
+	["Color Text"] = Color3.fromRGB(245, 247, 255),
+	["Color Dark Text"] = Color3.fromRGB(170, 175, 200)
+},
+		Dark = { -- Charcoal Blue (tối hơn, nổi text tốt)
+	["Color Hub 1"] = ColorSequence.new({
+		ColorSequenceKeypoint.new(0.00, Color3.fromRGB(22, 24, 32)),
+		ColorSequenceKeypoint.new(0.50, Color3.fromRGB(34, 37, 50)),
+		ColorSequenceKeypoint.new(1.00, Color3.fromRGB(22, 24, 32))
+	}),
+	["Color Hub 2"] = Color3.fromRGB(28, 31, 42),
+	["Color Stroke"] = Color3.fromRGB(70, 75, 105),
+	["Color Theme"] = Color3.fromRGB(96, 210, 255),   -- xanh cyan modern
+	["Color Text"] = Color3.fromRGB(248, 248, 252),
+	["Color Dark Text"] = Color3.fromRGB(185, 190, 210)
+},
+
+		Purple = { -- Neon Purple (tím hiện đại, không chói)
+	["Color Hub 1"] = ColorSequence.new({
+		ColorSequenceKeypoint.new(0.00, Color3.fromRGB(20, 18, 28)),
+		ColorSequenceKeypoint.new(0.50, Color3.fromRGB(33, 28, 46)),
+		ColorSequenceKeypoint.new(1.00, Color3.fromRGB(20, 18, 28))
+	}),
+	["Color Hub 2"] = Color3.fromRGB(26, 22, 38),
+	["Color Stroke"] = Color3.fromRGB(78, 70, 110),
+	["Color Theme"] = Color3.fromRGB(190, 120, 255),  -- tím pastel neon
+	["Color Text"] = Color3.fromRGB(245, 245, 255),
+	["Color Dark Text"] = Color3.fromRGB(185, 175, 205)
+}
 	},
 	Info = {
 		Version = "1.1.0"
