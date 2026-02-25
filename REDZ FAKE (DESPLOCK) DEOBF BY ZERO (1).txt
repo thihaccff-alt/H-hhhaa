@@ -3739,7 +3739,9 @@ v466:AddMinimizeButton({
     Corner = { CornerRadius = UDim.new(0.25, 0) },
 })
 
+
 local v484 = v466:MakeTab({"Discord", "info"})
+local v700 = v466:MakeTab({"Discord", "info"})
 local v485 = v466:MakeTab({"Farm", "home"})
 local v487 = v466:MakeTab({"Quest | Items", "swords"})
 local v486 = v466:MakeTab({"Auto Fishing", "rbxassetid://127664059821666"})
@@ -3758,6 +3760,12 @@ v484:AddDiscordInvite({
     Description = "Join server",
     Logo = "rbxassetid://131390899634192",
     Invite = "https://discord.gg/BnEDf68jwx"
+})
+v700:AddDiscordInvite({
+    Name = "Shop Game Bostur",
+    Description = "Buy Acc Roblox",
+    Logo = "rbxassetid://131390899634192",
+    Invite = "https://thinhrobloxviet.com/"
 })
 _G.SelectWeapon = "Melee"
 task.spawn(function()
