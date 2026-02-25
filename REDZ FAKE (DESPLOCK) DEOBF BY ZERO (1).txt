@@ -3728,9 +3728,9 @@ function CheckItemBPCRBPCR(v463)
 end
 local vu32 = loadstring(game:HttpGet("https://raw.githubusercontent.com/PlockScripts/Library-ui/refs/heads/main/Redzhubui"))()
 local v466 = vu32:MakeWindow({
-    Title = "redz hub : Blox Fruits",
-    SubTitle = "by real_redz",
-    SaveFolder = "Redz | redz lib v5.lua"
+    Title = "Bostur hub : Blox Fruits",
+    SubTitle = "By_Bostur",
+    SaveFolder = "Bostur | Ui RedzHub"
 })
 
 v466:AddMinimizeButton({
