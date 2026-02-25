@@ -10837,60 +10837,7 @@ local RunService = game:GetService("RunService")
 
 local CoreGui = game:GetService("CoreGui")
 
-local gui = Instance.new("ScreenGui")
-gui.Name = "RedzNotification"
-gui.ResetOnSpawn = false
-gui.IgnoreGuiInset = true
-gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-gui.DisplayOrder = 999999
-gui.Parent = CoreGui
 
-local frame = Instance.new("Frame")
-frame.Size = UDim2.new(0, 300, 0, 75) -- menor
-frame.Position = UDim2.new(1, 400, 1, -30)
-frame.AnchorPoint = Vector2.new(1, 1)
-frame.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
-frame.BorderSizePixel = 0
-frame.Parent = gui
-
-local corner = Instance.new("UICorner")
-corner.CornerRadius = UDim.new(0, 10)
-corner.Parent = frame
-
-local stroke = Instance.new("UIStroke")
-stroke.Color = Color3.fromRGB(60, 60, 60)
-stroke.Thickness = 1
-stroke.Parent = frame
-
-local iconBg = Instance.new("Frame")
-iconBg.Size = UDim2.new(0, 50, 0, 50)
-iconBg.Position = UDim2.new(0, 12, 0.5, -25)
-iconBg.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-iconBg.BorderSizePixel = 0
-iconBg.Parent = frame
-
-local iconCorner = Instance.new("UICorner")
-iconCorner.CornerRadius = UDim.new(0, 8)
-iconCorner.Parent = iconBg
-
-local icon = Instance.new("ImageLabel")
-icon.Size = UDim2.new(1, -8, 1, -8)
-icon.Position = UDim2.new(0.5, 0, 0.5, 0)
-icon.AnchorPoint = Vector2.new(0.5, 0.5)
-icon.BackgroundTransparency = 1
-icon.Image = "rbxassetid://71107770464806"
-icon.Parent = iconBg
-
-local title = Instance.new("TextLabel")
-title.Size = UDim2.new(1, -115, 0, 25)
-title.Position = UDim2.new(0, 75, 0, 10)
-title.BackgroundTransparency = 1
-title.Text = "Script Loaded"
-title.Font = Enum.Font.GothamBold
-title.TextSize = 17
-title.TextColor3 = Color3.new(1, 1, 1)
-title.TextXAlignment = Enum.TextXAlignment.Left
-title.Parent = frame
 
 
 -- Timer branco
