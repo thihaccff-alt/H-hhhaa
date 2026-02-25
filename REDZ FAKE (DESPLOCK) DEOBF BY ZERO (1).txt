@@ -3728,7 +3728,7 @@ function CheckItemBPCRBPCR(v463)
 end
 local vu32 = loadstring(game:HttpGet("https://raw.githubusercontent.com/thihaccff-alt/H-hhhaa/refs/heads/main/libbossturuiredzhub.lua"))()
 local v466 = vu32:MakeWindow({
-    Title = "Bostur hub : Blox Fruits",
+    Title = "Bostur Hub : Blox Fruits",
     SubTitle = "By_Bostur",
     SaveFolder = "Bostur | Ui RedzHub"
 })
